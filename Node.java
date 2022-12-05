@@ -18,6 +18,10 @@ public class Node<T extends Comparable<T>> {
     this.next = next;
   }
 
+  public Node() {
+
+  }
+
   public T getData() {
     return data;
   }

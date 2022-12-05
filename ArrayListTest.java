@@ -350,7 +350,7 @@ public class ArrayListTest {
             while(x<randomSize){
                 for (int i = 0; i < test.length; i++) {
                     list.add(test[i]);//list that will be swapped
-                    notSwapped.add(test[i]); //sam elist that isnt swapped
+                    notSwapped.add(test[i]); //same list that isnt swapped
                     randomSize--;
                 }
 

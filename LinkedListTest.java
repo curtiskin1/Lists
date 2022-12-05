@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.rules.Timeout;
 
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.Random;
 
 import static org.junit.Assert.*;
@@ -77,7 +78,21 @@ public class LinkedListTest {
                 }
                 arr[idx] = test[toAdd];
 
-                for (int j = 0; j < arr.length; j++) assertEquals(arr[j], list.get(j)); // all elements should match
+
+
+                // See if j == arr.length-1
+
+
+                for (int j = 0; j < arr.length; j++) {
+//                    if(!arr[j].equals(list.get(j))) {
+//                        System.out.println("J:" + j + " arr length:" + arr.length);
+//                        System.out.println(arr[j-1] + " " + arr[j] + " "+ arr[j+1] );
+//                        System.out.println(list.get(j-1) + " " + list.get(j)+ " "+ list.get(j+1) );
+//                    }
+
+                assertEquals(arr[j], list.get(j)); // all elements should match
+
+                }
             }
 
             // add out of bounds
